@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1020">
+    <meta name="description" content="Omar Hasan — personal website">
+    <title>Omar Hasan | Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="হোম">
+            <span class="brand-mark">OH</span>
+            <span>Omar Hasan</span>
+        </a>
+
+        <nav class="nav" id="navMenu">
+            <a href="#home">হোম</a>
+            <a href="#about">আমার সম্পর্কে</a>
+            <a href="#contact">যোগাযোগ</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-button" id="themeButton" onclick="toggleDarkMode()" aria-label="থিম পরিবর্তন">
+                ☀️
+            </button>
+            <button class="menu-button" id="menuButton" onclick="toggleMenu()" aria-label="মেনু">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero section">
+            <div class="hero-content reveal">
+                <div class="status-pill">
+                    <span class="status-dot"></span>
+                    শেখার পথে • Building & Learning
+                </div>
+
+                <div class="profile-ring">
+                    <img src="photo.jpg" alt="Omar Hasan-এর ছবি"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+                    <div class="profile-fallback">OH</div>
+                </div>
+
+                <p class="eyebrow">WELCOME TO MY DIGITAL SPACE</p>
+                <h1>হ্যালো! 👋<br><span>আমি Omar Hasan</span></h1>
+
+                <p class="hero-text">
+                    এটি আমার প্রথম ওয়েবসাইট। HTML, CSS এবং JavaScript শিখতে
+                    শিখতে Android ফোনে Acode ব্যবহার করে এটি তৈরি করেছি।
+                </p>
+
+                <div class="hero-actions">
+                    <a class="primary-button" href="#about">আমার সম্পর্কে <span>↓</span></a>
+                    <button class="secondary-button" onclick="showMessage()">একটি মেসেজ দেখাও ✨</button>
+                </div>
+
+                <p id="message" class="message" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-heading reveal">
+                <p class="eyebrow">ABOUT ME</p>
+                <h2>আমি কী শিখছি?</h2>
+                <p>ওয়েব ডেভেলপমেন্টের মৌলিক বিষয়গুলো নিয়ে আমার শেখার যাত্রা চলছে।</p>
+            </div>
+
+            <div class="cards">
+                <article class="glass-card reveal">
+                    <div class="card-icon">🌐</div>
+                    <h3>HTML</h3>
+                    <p>ওয়েব পেজের structure ও content তৈরি করা শিখছি।</p>
+                </article>
+
+                <article class="glass-card reveal">
+                    <div class="card-icon">🎨</div>
+                    <h3>CSS</h3>
+                    <p>সুন্দর layout, responsive design ও modern styling শিখছি।</p>
+                </article>
+
+                <article class="glass-card reveal">
+                    <div class="card-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <p>ওয়েবসাইটে interaction ও dynamic features যোগ করা শিখছি।</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="contact-card reveal">
+                <div>
+                    <p class="eyebrow">GET IN TOUCH</p>
+                    <h2>যোগাযোগ</h2>
+                    <p>আমার সঙ্গে যোগাযোগ করতে নিচের তথ্য ব্যবহার করতে পারো।</p>
+                </div>
+
+                <div class="contact-list">
+                    <a href="mailto:OFFICIAL.OMARHASAN@GMAIL.COM" class="contact-item">
+                        <span>📧</span>
+                        <span>OFFICIAL.OMARHASAN@GMAIL.COM</span>
+                    </a>
+                    <a href="tel:01577293666" class="contact-item">
+                        <span>📱</span>
+                        <span>01577293666</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Omar Hasan. Made with ❤️ while learning.</p>
+    </footer>
+
+    <button class="top-button" id="topButton" onclick="scrollToTop()" aria-label="উপরে যাও">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
